@@ -1,0 +1,26 @@
+body {
+	font-family: Arial, Sans serif;
+}
+
+p {
+	font-size: 12px;
+}
+
+
+.p1 {
+	background-color : red;
+}
+
+.p2 {
+	background-color : green;
+}
+
+.p3 {
+	background-color : blue;
+}
+
+#calais {
+	width : 200px;
+	height : 200px;
+}
+
