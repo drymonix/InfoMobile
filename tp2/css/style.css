@@ -1,0 +1,62 @@
+body {
+	font-family: Arial, Sans serif;
+}
+
+p {
+	font-size: 12px;
+	position: relative;
+}
+
+form{
+	border: 1px black solid;
+	width:500px;
+	margin:left;
+	padding:20px;
+	height:570px;
+}
+
+input{
+	margin-bottom:10px;
+}
+
+label, input{
+	display:block;
+}
+
+#calais {
+	float : right;
+	margin-top : -500px;
+}
+
+.p1 {
+	background-color : red;
+}
+
+.p2 {
+	background-color : green;
+}
+
+.p3 {
+	background-color : blue;
+}
+
+/*  Media Queries  */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  /* Règles CSS d’adaptation */
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
