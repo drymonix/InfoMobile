@@ -13,11 +13,21 @@ p {
 	color : white;
 	font-size: 14px;
 	font-weight : bold;
-	margin-bottom : 5px;
 	
 }
 
+h2 {
+	text-align : center;
+}
+
+div.in p {
+	margin : auto;
+	margin-bottom : 5px;
+	width : 50%;
+}
+
 div.in{
+	display : block;
 	margin : auto;
 }
 
@@ -26,10 +36,15 @@ form{
 	padding:20px;
 	height:auto;
 	margin : auto;
+	margin-bottom : 20px;
+	margin-top : 20px;
+	width : 50%;
 }
 
-#calais {
-	margin-right : 0px;
+div.in #calais {
+	display : block;
+	margin : auto;
+	margin-bottom : 50px;
 }
 
 input{
@@ -52,13 +67,19 @@ label, input{
 	background-color : blue;
 }
 
+/*  Media Queries Tablette */
 
 @media screen and (max-width: 1024px) {
 
   /* Règles CSS d’adaptation */
   
-  div.in{
-	  width : 100%;
+  label{
+	text-align : center;
+  }
+  
+  input{
+	  margin : auto;
+	  margin-bottom : 10px;
   }
   
 }
@@ -70,8 +91,21 @@ label, input{
 
   /* Règles CSS d’adaptation */
   
-  div.in{
-	  width:100%;
+  label{
+	text-align : center;
+  }
+  
+   input{
+	  margin : auto;
+	  margin-bottom : 10px;
+  }
+  
+  div.in p {
+	  width : 100%;
+  }
+  
+  form {
+	  width : 100%;
   }
   
 }
