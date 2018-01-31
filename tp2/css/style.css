@@ -1,18 +1,35 @@
+*{
+	color:black;
+	margin:0px;
+	padding:0px;
+}
+
 body {
 	font-family: Arial, Sans serif;
 }
 
-div, p {
-	font-size: 12px;
-	position: relative;
+p {
+	text-align : center;
+	color : white;
+	font-size: 14px;
+	font-weight : bold;
+	margin-bottom : 5px;
+	
+}
+
+div.in{
+	margin : auto;
 }
 
 form{
 	border: 1px black solid;
-	width:500px;
-	margin:left;
 	padding:20px;
-	height:570px;
+	height:auto;
+	margin : auto;
+}
+
+#calais {
+	margin-right : 0px;
 }
 
 input{
@@ -21,11 +38,6 @@ input{
 
 label, input{
 	display:block;
-}
-
-#calais {
-	float : right;
-	margin-top : -500px;
 }
 
 .p1 {
@@ -40,26 +52,26 @@ label, input{
 	background-color : blue;
 }
 
-/*  Media Queries  */
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 1080px) {
+@media screen and (max-width: 1024px) {
 
   /* Règles CSS d’adaptation */
   
-  #calais{
-	float : left;
-	margin-top : 0px;
+  div.in{
+	  width : 100%;
   }
   
-  form{
-	  height : 400px;
-	  width : 400px;
-  }
+}
+
+
+/*  Media Queries Telephone */
+
+@media screen and (max-width: 550px) {
+
+  /* Règles CSS d’adaptation */
   
-  div, p {
-	  width : 450px;
+  div.in{
+	  width:100%;
   }
   
 }
