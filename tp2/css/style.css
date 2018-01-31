@@ -2,7 +2,7 @@ body {
 	font-family: Arial, Sans serif;
 }
 
-p {
+div, p {
 	font-size: 12px;
 	position: relative;
 }
@@ -44,11 +44,23 @@ label, input{
 
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (max-device-width : 1080px) {
 
   /* Règles CSS d’adaptation */
   
+  #calais{
+	float : left;
+	margin-top : 0px;
+  }
   
+  form{
+	  height : 400px;
+	  width : 400px;
+  }
+  
+  div, p {
+	  width : 450px;
+  }
   
 }
 
