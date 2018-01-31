@@ -18,6 +18,11 @@ p {
 
 h2 {
 	text-align : center;
+	margin-bottom : 10px;
+}
+
+h2.in {
+	margin-top : 10px;
 }
 
 div.in p {
@@ -45,6 +50,7 @@ div.in #calais {
 	display : block;
 	margin : auto;
 	margin-bottom : 50px;
+	width : 50%;
 }
 
 input{
@@ -78,6 +84,7 @@ label, input{
   }
   
   input{
+	  width : 100%;
 	  margin : auto;
 	  margin-bottom : 10px;
   }
@@ -95,7 +102,8 @@ label, input{
 	text-align : center;
   }
   
-   input{
+  input{
+	  width : 100%;
 	  margin : auto;
 	  margin-bottom : 10px;
   }
@@ -105,9 +113,12 @@ label, input{
   }
   
   form {
-	  width : 100%;
+	  width : auto;
   }
   
+  div.in #calais{
+	  width : 100%;
+  }
 }
 
 
