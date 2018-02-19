@@ -1,131 +1,113 @@
-*{
-	color:black;
-	margin:0px;
-	padding:0px;
+* {
+    color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-	font-family: Arial, Sans serif;
+    font-family: Arial, Sans serif;
 }
 
 p {
-	text-align : center;
-	color : white;
-	font-size: 14px;
-	font-weight : bold;
-	
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 h2 {
-	text-align : center;
-	margin-bottom : 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 h2.in {
-	margin-top : 10px;
+    margin-top: 10px;
 }
 
 div.in p {
-	margin : auto;
-	margin-bottom : 5px;
-	width : 50%;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 50%;
 }
 
-div.in{
-	display : block;
-	margin : auto;
+div.in {
+    display: block;
+    margin: auto;
 }
 
-form{
-	border: 1px black solid;
-	padding:20px;
-	height:auto;
-	margin : auto;
-	margin-bottom : 20px;
-	margin-top : 20px;
-	width : 50%;
+form {
+    border: 1px black solid;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 50%;
 }
 
 div.in #calais {
-	display : block;
-	margin : auto;
-	margin-bottom : 50px;
-	width : 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
 }
 
-input{
-	margin-bottom:10px;
+input {
+    margin-bottom: 10px;
 }
 
-label, input{
-	display:block;
+label,
+input {
+    display: block;
 }
 
 .p1 {
-	background-color : red;
+    background-color: red;
 }
 
 .p2 {
-	background-color : green;
+    background-color: green;
 }
 
 .p3 {
-	background-color : blue;
+    background-color: blue;
 }
+
 
 /*  Media Queries Tablette */
 
 @media screen and (max-width: 1024px) {
-
-  /* Règles CSS d’adaptation */
-  
-  label{
-	text-align : center;
-  }
-  
-  input{
-	  width : 100%;
-	  margin : auto;
-	  margin-bottom : 10px;
-  }
-  
+    /* Règles CSS d’adaptation */
+    label {
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
 
 
-/*  Media Queries Telephone */
+/*  Media Queries Smartphone */
 
 @media screen and (max-width: 550px) {
-
-  /* Règles CSS d’adaptation */
-  
-  label{
-	text-align : center;
-  }
-  
-  input{
-	  width : 100%;
-	  margin : auto;
-	  margin-bottom : 10px;
-  }
-  
-  div.in p {
-	  width : 100%;
-  }
-  
-  form {
-	  width : auto;
-  }
-  
-  div.in #calais{
-	  width : 100%;
-  }
+    /* Règles CSS d’adaptation */
+    label {
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    div.in p {
+        width: 100%;
+    }
+    form {
+        width: auto;
+    }
+    div.in #calais {
+        width: 100%;
+    }
 }
-
-
-
-
-
-
-
-
-
