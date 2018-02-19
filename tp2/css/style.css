@@ -36,6 +36,7 @@ div.in {
 }
 
 form {
+    display: block;
     border: 1px black solid;
     padding: 20px;
     height: auto;
@@ -43,6 +44,16 @@ form {
     margin-bottom: 20px;
     margin-top: 20px;
     width: 50%;
+}
+
+input {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+form div {
+    text-align: center;
 }
 
 div.in #calais {
