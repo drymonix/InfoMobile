@@ -8,6 +8,15 @@ body {
     font-family: Arial, Sans serif;
 }
 
+div.picture {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    background: url(../img/iut.jpg) no-repeat center;
+    background-size: 100%;
+}
+
 p {
     text-align: center;
     color: white;
@@ -50,6 +59,7 @@ input {
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 form div {
