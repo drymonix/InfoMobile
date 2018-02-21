@@ -4,6 +4,11 @@
     padding: 0px;
 }
 
+
+/* html {
+    font-size: 100%;
+} */
+
 body {
     font-family: Arial, Sans serif;
 }
@@ -12,16 +17,36 @@ div.picture {
     display: block;
     margin: auto;
     width: 300px;
+    /* width: 30vw; */
     height: 150px;
+    /* height: 15vw; */
     background: url(../img/iut.jpg) no-repeat center;
-    background-size: 100%;
+    background-size: contain;
 }
 
 p {
     text-align: center;
     color: white;
-    font-size: 14px;
     font-weight: bold;
+}
+
+.p1 {
+    background-color: red;
+}
+
+.p2 {
+    background-color: green;
+}
+
+.p3 {
+    background-color: blue;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    /* font-size: 1.5625rem; */
+    font-size: 4vw;
 }
 
 h2 {
@@ -82,22 +107,33 @@ input {
     display: block;
 }
 
-.p1 {
-    background-color: red;
+table {
+    width: 50%;
+    margin: auto;
+    border: 1px black solid;
+    text-align: center;
 }
 
-.p2 {
-    background-color: green;
+#tab {
+    display: block;
 }
 
-.p3 {
-    background-color: blue;
+table th {
+    border: 1px black solid;
+    background-color: lightgray;
+}
+
+table td {
+    border: 1px black solid;
 }
 
 
 /*  Media Queries Tablette */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px)
+/* and (aspect-ratio: 2) */
+
+{
     /* Règles CSS d’adaptation */
     label {
         text-align: center;
@@ -112,7 +148,10 @@ input {
 
 /*  Media Queries Smartphone */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px)
+/*  and (aspect-ratio: 2) */
+
+{
     /* Règles CSS d’adaptation */
     label {
         text-align: center;
@@ -129,6 +168,18 @@ input {
         width: auto;
     }
     div.in #calais {
+        width: 100%;
+    }
+    div.picture {
+        width: 100%;
+    }
+    table th {
+        display: grid;
+    }
+    table td {
+        display: grid;
+    }
+    table {
         width: 100%;
     }
 }
