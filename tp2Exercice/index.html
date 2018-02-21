@@ -12,15 +12,31 @@
 <body>
 
     <header>
-        <div class="logo"></div>
-        <ul>
-            <li><a href="www.mon-site.com">Accueil</a>
+        <div class="headline">
+            <li>
+                <div class="logo"></div>
             </li>
-            <li><a href="www.mon-site.com">Son Histoire</a>
+            <li>
+                <div class="in">
+                    <ul>
+                        <li><a href="www.mon-site.com">Accueil |</a>
+                        </li>
+                        <li><a href="www.mon-site.com">Son Histoire |</a>
+                        </li>
+                        <li><a href="www.mon-site.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li><a href="www.mon-site.com">Contact</a>
+            <li>
+                <div id="searchbar">
+                    <form action="" class="formulaire">
+                        <input class="champ" type="text" placeholder="Rechercher..." />
+                        <input class="bouton" type="button" value="Valider" />
+                    </form>
+                </div>
             </li>
-        </ul>
+        </div>
     </header>
 
     <menu>
@@ -35,58 +51,46 @@
             Je verrai bien ce que je mettrai...
         </p>
         <div class="lesGolfs">
-            <div class="uneGolf">
-                <ul>
-                    <li>
+            <ul>
+                <li>
+                    <div class="uneGolf">
                         <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
-                    </li>
-                </ul>
-                <h3>
-                    Titre1
-                </h3>
-                <p>
-                    Description
-                </p>
-            </div>
-            <div class="uneGolf2">
-                <ul>
-                    <li>
+                        <h3>
+                            Titre1
+                        </h3>
+                        <p>
+                            Description
+                        </p>
+                    </div>
+                    <div class="uneGolf2">
                         <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
-                    </li>
-                </ul>
-                <h3>
-                    Titre1
-                </h3>
-                <p>
-                    Description
-                </p>
-            </div>
-            <div class="uneGolf3">
-                <ul>
-                    <li>
+                        <h3>
+                            Titre1
+                        </h3>
+                        <p>
+                            Description
+                        </p>
+                    </div>
+                    <div class="uneGolf3">
                         <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
-                    </li>
-                </ul>
-                <h3>
-                    Titre1
-                </h3>
-                <p>
-                    Description
-                </p>
-            </div>
-            <div class="uneGolf4">
-                <ul>
-                    <li>
+                        <h3>
+                            Titre1
+                        </h3>
+                        <p>
+                            Description
+                        </p>
+                    </div>
+                    <div class="uneGolf4">
                         <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
-                    </li>
-                </ul>
-                <h3>
-                    Titre1
-                </h3>
-                <p>
-                    Description
-                </p>
-            </div>
+                        <h3>
+                            Titre1
+                        </h3>
+                        <p>
+                            Description
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </article>
 
@@ -122,6 +126,9 @@
                     </div>
                     <div>
                         <input type="textarea" placeholder="message" id="message" />
+                    </div>
+                    <div>
+                        <input type="file" placeholder="photo" id="photo" />
                     </div>
                     <div>
                         <input type="submit" value="Envoyer" />
