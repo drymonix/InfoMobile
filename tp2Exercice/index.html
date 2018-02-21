@@ -3,100 +3,137 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Info Mobile</title>
+    <title>Golf GTI Passion - FR</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="img" href="img/shingeki.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body>
 
-    <div class="picture"></div>
-    <div class="in">
-        <p class="p1">Le premier paragraphe...</p>
-        <p class="p2">Le deuxième paragraphe...</p>
-        <p class="p3">Le troisième paragraphe...</p>
+    <header>
+        <div class="logo"></div>
+        <ul>
+            <li><a href="www.mon-site.com">Accueil</a>
+            </li>
+            <li><a href="www.mon-site.com">Son Histoire</a>
+            </li>
+            <li><a href="www.mon-site.com">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <menu>
+        <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
+    </menu>
+
+    <article>
+        <h1>
+            Présentation
+        </h1>
+        <p>
+            Je verrai bien ce que je mettrai...
+        </p>
+        <div class="lesGolfs">
+            <div class="uneGolf">
+                <ul>
+                    <li>
+                        <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
+                    </li>
+                </ul>
+                <h3>
+                    Titre1
+                </h3>
+                <p>
+                    Description
+                </p>
+            </div>
+            <div class="uneGolf2">
+                <ul>
+                    <li>
+                        <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
+                    </li>
+                </ul>
+                <h3>
+                    Titre1
+                </h3>
+                <p>
+                    Description
+                </p>
+            </div>
+            <div class="uneGolf3">
+                <ul>
+                    <li>
+                        <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
+                    </li>
+                </ul>
+                <h3>
+                    Titre1
+                </h3>
+                <p>
+                    Description
+                </p>
+            </div>
+            <div class="uneGolf4">
+                <ul>
+                    <li>
+                        <img id="golfAccueil" src="img/calais.jpg" alt="golf" />
+                    </li>
+                </ul>
+                <h3>
+                    Titre1
+                </h3>
+                <p>
+                    Description
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <div class="apresArticle">
+        <div class="gauche">
+            <h2 class="in">
+                Titre2
+            </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9750.524471189356!2d2.37646617268753!3d51.03352931300586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1519206860557" width="400" height="300" frameborder="0" style="border:0"
+                allowfullscreen>
+                    </iframe>
+        </div>
+        <div class="droite">
+            <h2 class="in">
+                Titre2
+            </h2>
+            <form>
+                <div>
+                    <div>
+                        <input type="text" placeholder="prénom" id="prénom" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="nom" id="nom" />
+                    </div>
+                    <div>
+                        <input type="date" id="dateNaiss" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Ville de naissance" id="ville" />
+                    </div>
+                    <div>
+                        <input type="email" placeholder="mon@adresse.fr" id="email" />
+                    </div>
+                    <div>
+                        <input type="textarea" placeholder="message" id="message" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Envoyer" />
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <h1>
-        M4105C : Un super module
-    </h1>
-
-    <table>
-        <div id="tab">
-            <tr>
-                <th>Sports</th>
-                <td>Tennis de table</td>
-                <td>Football</td>
-                <td>Poney</td>
-                <td>Curling</td>
-                <td>Patinnage artistique</td>
-                <td>Bastketball</td>
-            </tr>
-            <tr>
-                <th>Compétitions</th>
-                <td>Jeux Olympiques</td>
-                <td>Championnats d'Europe</td>
-                <td>Coupe du monde</td>
-                <td>Championnats régionaux</td>
-                <td>Coupe district</td>
-                <td>NBA</td>
-            </tr>
-        </div>
-    </table>
-
-    <h2 class="in">
-        S'inscrire
-    </h2>
-
-    <form>
-        <div>
-            <label for="nom">Nom</label>
-            <div>
-                <input type="text" id="nom" />
-            </div>
-            <label for="dateNaiss">Date de naissance</label>
-            <div>
-                <input type="date" id="dateNaiss" />
-            </div>
-            <label for="age">Age</label>
-            <div>
-                <input type="number" id="age" />
-            </div>
-            <label for="lienPage">Page Facebook</label>
-            <div>
-                <input type="url" placeholder="https://www.monSite.fr/" id="lienPage" />
-            </div>
-            <label for="email">Adresse électronique</label>
-            <div>
-                <input type="email" placeholder="mon@adresse.fr" id="email" />
-            </div>
-            <label for="telephone">Telephone</label>
-            <div>
-                <input type="tel" placeholder="XX XX XX XX XX" id="telephone" />
-            </div>
-            <div>
-                <input type="submit" value="Envoyer" />
-            </div>
-        </div>
-    </form>
-
-    <h2>
-        Mairie de Calais
-    </h2>
-
-    <div class="in">
-        <!-- <img src="http://applicook.fr/iut/images/calais.jpg" width=500px height=500px; /> -->
-        <img id="calais" src="img/calais.jpg" alt="calais" />
-        <!-- width=450px height=450px -->
-    </div>
-
-    <h2>
-        Une bière...
-    </h2>
-
-    <div class="biere"></div>
+    <footer>
+        <p>Votre prénom et nom de groupe</p>
+    </footer>
 
 </body>
 
