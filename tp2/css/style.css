@@ -16,9 +16,9 @@ body {
 div.picture {
     display: block;
     margin: auto;
-    width: 300px;
+    width: 500px;
     /* width: 30vw; */
-    height: 150px;
+    height: 250px;
     /* height: 15vw; */
     background: url(../img/iut.jpg) no-repeat center;
     background-size: contain;
@@ -127,6 +127,16 @@ table td {
     border: 1px black solid;
 }
 
+div.biere {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: 100% 100%;
+    margin-bottom: 50px;
+}
+
 
 /*  Media Queries Tablette */
 
@@ -135,13 +145,24 @@ table td {
 
 {
     /* Règles CSS d’adaptation */
-    label {
-        text-align: center;
+    div.in p {
+        width: 75%;
     }
-    input {
+    form {
+        width: 75%;
+    }
+    div.in #calais {
+        width: 75%;
+    }
+    div.picture {
         width: 100%;
-        margin: auto;
-        margin-bottom: 10px;
+        background-size: contain;
+    }
+    table {
+        width: 75%;
+    }
+    div.biere {
+        width: 75%;
     }
 }
 
@@ -153,14 +174,6 @@ table td {
 
 {
     /* Règles CSS d’adaptation */
-    label {
-        text-align: center;
-    }
-    input {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10px;
-    }
     div.in p {
         width: 100%;
     }
@@ -180,6 +193,9 @@ table td {
         display: grid;
     }
     table {
+        width: 100%;
+    }
+    div.biere {
         width: 100%;
     }
 }
