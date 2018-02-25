@@ -1,7 +1,24 @@
+@font-face {
+    font-family: "Futura";
+    src: url('../ttf/Futura Book font.ttf');
+}
+
+@font-face {
+    font-family: "Blackoak";
+    src: url('../ttf/Blackoak.ttf');
+}
+
+html {
+    background: url(../img/fond.jpg) top left no-repeat fixed;
+    background-size: cover;
+}
+
+
 /*** GENERAL ***/
 
 body {
     margin: 0px;
+    font-family: "Futura";
 }
 
 
@@ -9,33 +26,53 @@ body {
 
 header {
     background-color: grey;
+    padding-left: 10px;
+    height: 70px;
 }
 
 
 /* Logo */
 
 header div.logo {
-    width: 150px;
-    height: 50px;
-    background: url(../img/logo.png) no-repeat;
-    background-size: 100%;
+    width: 100px;
+    height: 70px;
+    background: url(../img/logoo.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
 }
 
 
 /* Menu */
 
-header div.headline li {
+header div.haut {
+    width: 70%;
+    margin: auto;
+}
+
+header div.titre {
     display: inline-block;
 }
 
+header div.titre p {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    line-height: 70px;
+    float: right;
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
 header div.in {
-    background-color: red;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
 }
 
 header div.in ul {
     padding: 0px;
     margin: 0px;
-    line-height: 50px;
 }
 
 header div.in ul li {
@@ -48,11 +85,180 @@ header div.in ul li a {
     text-decoration: none;
     text-align: center;
     color: white;
+    line-height: 70px;
+    margin: 0px 5px 0px 5px;
+    text-shadow: black 2px 2px;
 }
 
-header div.searchbar {
-    display: block;
+header div.in ul li a::before {
+    content: '|';
+    color: white;
+    padding-right: 10px;
+}
+
+header div.in ul li:first-child a::before {
+    content: none;
 }
 
 
 /*** IMAGE MENU ***/
+
+menu {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+}
+
+menu #golfAccueil {
+    width: 100%;
+}
+
+
+/**** PAGE ****/
+
+div.fond {
+    width: 70%;
+    margin: auto;
+    background-color: lightgray;
+}
+
+
+/*** ARTICLE ***/
+
+article div.present {
+    border-bottom: 2px black solid;
+    width: 300px;
+}
+
+article h1 {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+article p {
+    text-align: justify;
+}
+
+
+/*** LES 4 IMAGES DE JOLIES ET BELLES GOLFS ***/
+
+div.lesGolfs {
+    margin: auto;
+    text-align: center;
+}
+
+div.lesGolfs li {
+    display: inline-block;
+    margin: auto;
+    list-style-position: inside;
+    list-style: none;
+    padding: 10px;
+}
+
+div.golf1 {
+    display: block;
+    width: 240px;
+}
+
+div.golfgti {
+    display: block;
+    width: 240px;
+}
+
+div.golfrabbit {
+    display: block;
+    width: 240px;
+}
+
+div.golfcab {
+    display: block;
+    width: 240px;
+}
+
+#golf1,
+#golf2,
+#golf3,
+#golf4 {
+    width: 240px;
+}
+
+
+/*** L'APRES ARTICLE ***/
+
+div.apresArticle {
+    margin: auto;
+    text-align: center;
+    /* display: inline-block; */
+    width: 100%;
+}
+
+
+/* Gauche */
+
+div.gauche {
+    display: inline-block;
+    /* float: left; */
+}
+
+
+/* Droite */
+
+div.droite {
+    display: inline-block;
+    /* float: right; */
+}
+
+form {
+    display: block;
+    border: 1px black solid;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form div {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+label,
+input {
+    display: block;
+}
+
+
+/*** PIED DE PAGE ***/
+
+footer {
+    background-color: gray;
+    margin: auto;
+    line-height: 50px;
+}
+
+footer div {
+    width: 70%;
+    margin: auto;
+}
+
+footer p {
+    margin: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+footer p span {
+    float: right;
+}
