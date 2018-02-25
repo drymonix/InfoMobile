@@ -3,11 +3,6 @@
     src: url('../ttf/Futura Book font.ttf');
 }
 
-@font-face {
-    font-family: "Blackoak";
-    src: url('../ttf/Blackoak.ttf');
-}
-
 html {
     background: url(../img/fond.jpg) top left no-repeat fixed;
     background-size: cover;
@@ -188,8 +183,7 @@ div.golfcab {
 
 div.apresArticle {
     margin: auto;
-    text-align: center;
-    /* display: inline-block; */
+    display: inline-block;
     width: 100%;
 }
 
@@ -197,46 +191,63 @@ div.apresArticle {
 /* Gauche */
 
 div.gauche {
-    display: inline-block;
-    /* float: left; */
+    padding-left: 20px;
+    width: 48%;
+    float: left;
+    margin: auto;
+    height: 215px;
+}
+
+div.gauche iframe {
+    width: 100%;
+    height: 100%;
 }
 
 
 /* Droite */
 
 div.droite {
-    display: inline-block;
-    /* float: right; */
+    width: 48%;
+    float: right;
+    margin: auto;
 }
 
 form {
     display: block;
-    border: 1px black solid;
-    padding: 20px;
     height: auto;
-    margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    width: 85%;
 }
 
-input {
+div.droite input {
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
-    text-align: center;
 }
 
-form div {
-    text-align: center;
+div.identite {
+    display: inline-block;
 }
 
-input {
-    margin-bottom: 10px;
+div.nommage {
+    width: 48%;
+    float: left;
 }
 
-label,
-input {
-    display: block;
+div.naiss {
+    width: 48%;
+    float: right;
+}
+
+#message {
+    box-sizing: border-box;
+    height: 50px;
+}
+
+div.input {
+    width: 25%;
+    float: right;
 }
 
 
