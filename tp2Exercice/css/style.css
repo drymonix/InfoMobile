@@ -3,6 +3,9 @@
     src: url('../ttf/Futura Book font.ttf');
 }
 
+
+/*** BACKGROUND ***/
+
 html {
     background: url(../img/fond.jpg) top left no-repeat fixed;
     background-size: cover;
@@ -48,6 +51,10 @@ header div.titre {
     display: inline-block;
 }
 
+header div.logotitre {
+    display: inline-block;
+}
+
 header div.titre p {
     text-transform: uppercase;
     font-size: 30px;
@@ -73,6 +80,10 @@ header div.in ul {
 header div.in ul li {
     display: inline-block;
     list-style-type: none;
+}
+
+header div.in ul li:hover {
+    background-color: lightgray;
 }
 
 header div.in ul li a {
@@ -146,45 +157,36 @@ div.lesGolfs {
 div.lesGolfs li {
     display: inline-block;
     margin: auto;
+    width: 22%;
     list-style-position: inside;
     list-style: none;
     padding: 10px;
 }
 
-div.golf1 {
-    display: block;
-    width: 240px;
-}
-
-div.golfgti {
-    display: block;
-    width: 240px;
-}
-
-div.golfrabbit {
-    display: block;
-    width: 240px;
-}
-
+div.golf1,
+div.golfgti,
+div.golfrabbit,
 div.golfcab {
     display: block;
-    width: 240px;
+    width: 100%;
+    /* width: 240px; */
 }
 
 #golf1,
 #golf2,
 #golf3,
 #golf4 {
-    width: 240px;
+    /* width: 240px; */
+    width: 100%;
 }
 
 
 /*** L'APRES ARTICLE ***/
 
 div.apresArticle {
-    margin: auto;
     display: inline-block;
     width: 100%;
+    margin: auto;
 }
 
 
@@ -201,6 +203,7 @@ div.gauche {
 div.gauche iframe {
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 
 
@@ -212,7 +215,7 @@ div.droite {
     margin: auto;
 }
 
-form {
+div.droite form {
     display: block;
     height: auto;
     margin-bottom: 20px;
@@ -272,4 +275,46 @@ footer p {
 
 footer p span {
     float: right;
+}
+
+
+/*  Media Queries Approchant de la Tablette */
+
+@media screen and (max-width: 1520px) {
+    /* Règles CSS d’adaptation */
+    div.fond {
+        width: 100%;
+    }
+    header div.haut {
+        width: 85%;
+    }
+    footer div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Règles CSS d’adaptation */
+    div.fond {
+        width: 100%;
+    }
+    header {
+        height: 150px;
+    }
+    header div.logotitre {
+        display: block;
+        text-align: center;
+    }
+    header div.in {
+        display: block;
+        float: unset;
+        text-align: center;
+    }
+}
+
+
+/*  Media Queries Smartphone */
+
+@media screen and (max-width: 650px) {
+    /* Règles CSS d’adaptation */
 }
