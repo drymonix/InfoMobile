@@ -101,29 +101,27 @@
                     S'inscrire au club ?
                 </h2>
                 <form>
+                    <div class="identite">
+                        <div class="nommage">
+                            <input type="text" placeholder="Prénom" id="prenom" />
+                            <input type="text" placeholder="Nom" id="nom" />
+                        </div>
+                        <div class="naiss">
+                            <input type="date" id="dateNaiss" />
+                            <input type="text" placeholder="Ville de naissance" id="ville" />
+                        </div>
+                    </div>
                     <div>
-                        <div class="identite">
-                            <div class="nommage">
-                                <input type="text" placeholder="Prénom" id="prenom" />
-                                <input type="date" id="dateNaiss" />
-                            </div>
-                            <div class="naiss">
-                                <input type="text" placeholder="Nom" id="nom" />
-                                <input type="text" placeholder="Ville de naissance" id="ville" />
-                            </div>
-                        </div>
-                        <div>
-                            <input type="email" placeholder="mon@adresse.fr" id="email" />
-                        </div>
-                        <div>
-                            <input type="textarea" placeholder="Message" id="message" />
-                        </div>
-                        <div>
-                            <input type="file" id="photo" />
-                        </div>
-                        <div class="input">
-                            <input type="submit" value="Envoyer" />
-                        </div>
+                        <input type="email" placeholder="mon@adresse.fr" id="email" />
+                    </div>
+                    <div>
+                        <input type="textarea" placeholder="Présenter votre Golf..." id="message" />
+                    </div>
+                    <div>
+                        <input type="file" id="photo" />
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Envoyer" />
                     </div>
                 </form>
             </div>

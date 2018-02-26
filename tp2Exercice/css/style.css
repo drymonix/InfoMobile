@@ -220,10 +220,10 @@ div.droite form {
     height: auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: 85%;
+    width: 90%;
 }
 
-div.droite input {
+div.droite form input {
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
@@ -231,16 +231,21 @@ div.droite input {
 
 div.identite {
     display: inline-block;
+    width: 100%;
+    margin: auto;
 }
 
-div.nommage {
-    width: 48%;
-    float: left;
-}
-
+div.nommage,
 div.naiss {
+    display: inline-block;
+    width: 100%;
+}
+
+#prenom,
+#nom,
+#dateNaiss,
+#ville {
     width: 48%;
-    float: right;
 }
 
 #message {
@@ -248,7 +253,7 @@ div.naiss {
     height: 50px;
 }
 
-div.input {
+div.submit {
     width: 25%;
     float: right;
 }
@@ -295,9 +300,11 @@ footer p span {
 
 @media screen and (max-width: 1024px) {
     /* Règles CSS d’adaptation */
+    /*** PAGE ***/
     div.fond {
         width: 100%;
     }
+    /*** EN-TETE***/
     header {
         height: 150px;
     }
@@ -309,6 +316,35 @@ footer p span {
         display: block;
         float: unset;
         text-align: center;
+    }
+    /*** LES 4 JOLIES ET BELLES GOLFS ***/
+    div.lesGolfs {
+        width: 100%;
+    }
+    div.lesGolfs li {
+        width: 45%;
+    }
+    /*** L'APRES ARTICLE ***/
+    /* Gauche */
+    div.gauche {
+        height: 270px;
+    }
+    /* Droite */
+    div.identite {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    div.nommage,
+    div.naiss {
+        display: block;
+        width: 100%;
+    }
+    #prenom,
+    #nom,
+    #dateNaiss,
+    #ville {
+        width: 100%;
     }
 }
 
