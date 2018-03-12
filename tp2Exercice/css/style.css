@@ -42,6 +42,11 @@ header div.logo {
 
 /* Menu */
 
+header {
+    position: fixed;
+    width: 100%;
+}
+
 header div.haut {
     width: 70%;
     margin: auto;
@@ -292,6 +297,9 @@ footer p span {
     div.fond {
         width: 100%;
     }
+    header {
+        position: relative;
+    }
     header div.haut {
         width: 85%;
     }
@@ -359,8 +367,8 @@ footer p span {
 
 @media screen and (max-width: 700px) {
     /* Règles CSS d’adaptation */
-    div.in ul {
-        display: none;
+    header {
+        padding: 0px;
     }
     #burger {
         background-color: gray;
@@ -372,11 +380,40 @@ footer p span {
         display: inline-block;
         font-size: 16px;
     }
+    header div.logotitre {
+        float: none;
+        display: inline-block;
+    }
+    header div.titre p {
+        font-size: 25px;
+    }
+    header div.in ul {
+        display: none;
+    }
     div.lesGolfs {
         width: 100%;
     }
     div.lesGolfs li {
         width: 100%;
         padding: 0px;
+    }
+    div.apresArticle {
+        display: block;
+    }
+    div.gauche {
+        width: 90%;
+        margin: auto;
+        float: none;
+        padding: 0px;
+        height: auto;
+    }
+    div.droite {
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+    div.droite form {
+        margin: 0px;
+        width: 100%;
     }
 }
