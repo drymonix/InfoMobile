@@ -34,7 +34,7 @@ header {
 header div.logo {
     width: 100px;
     height: 70px;
-    background: url(../img/logoo.png) no-repeat;
+    background: url(../img/logo.png) no-repeat;
     background-size: contain;
     display: inline-block;
 }
@@ -346,11 +346,15 @@ footer p span {
     #ville {
         width: 100%;
     }
+    /*** PIED DE PAGE ***/
+    footer div {
+        width: 90%;
+    }
 }
 
 
 /*  Media Queries Smartphone */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     /* Règles CSS d’adaptation */
 }
