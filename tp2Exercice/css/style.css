@@ -106,6 +106,10 @@ header div.in ul li:first-child a::before {
     content: none;
 }
 
+#burger {
+    display: none;
+}
+
 
 /*** IMAGE MENU ***/
 
@@ -169,14 +173,12 @@ div.golfrabbit,
 div.golfcab {
     display: block;
     width: 100%;
-    /* width: 240px; */
 }
 
 #golf1,
 #golf2,
 #golf3,
 #golf4 {
-    /* width: 240px; */
     width: 100%;
 }
 
@@ -357,4 +359,24 @@ footer p span {
 
 @media screen and (max-width: 700px) {
     /* Règles CSS d’adaptation */
+    div.in ul {
+        display: none;
+    }
+    #burger {
+        background-color: gray;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    div.lesGolfs {
+        width: 100%;
+    }
+    div.lesGolfs li {
+        width: 100%;
+        padding: 0px;
+    }
 }
