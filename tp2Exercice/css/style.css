@@ -369,9 +369,11 @@ footer p span {
     /* Règles CSS d’adaptation */
     header {
         padding: 0px;
+        height: 100px;
     }
     header div.haut {
         width: 100%;
+        display: inline-block;
     }
     #burger {
         background-color: gray;
@@ -383,9 +385,12 @@ footer p span {
         display: inline-block;
         font-size: 50px;
     }
+    header div.buburger {
+        float: left;
+    }
     header div.logotitre {
         display: inline-block;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     header div.titre p {
         font-size: 25px;
