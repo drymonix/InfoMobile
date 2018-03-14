@@ -367,6 +367,7 @@ footer p span {
 
 @media screen and (max-width: 700px) {
     /* Règles CSS d’adaptation */
+    /*** EN-TETE ***/
     header {
         padding: 0px;
         height: 100px;
@@ -374,6 +375,10 @@ footer p span {
     header div.haut {
         width: 100%;
         display: inline-block;
+    }
+    header div.buburger {
+        float: left;
+        width: 15vw;
     }
     #burger {
         background-color: gray;
@@ -383,21 +388,22 @@ footer p span {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 50px;
-    }
-    header div.buburger {
-        float: left;
+        font-size: 8vw;
     }
     header div.logotitre {
         display: inline-block;
         margin-top: 20px;
     }
+    header div.logo {
+        width: 15vw;
+    }
     header div.titre p {
-        font-size: 25px;
+        font-size: 5vw;
     }
     header div.in ul {
         display: none;
     }
+    /*** LES 4 GOLFS ***/
     div.lesGolfs {
         width: 100%;
     }
@@ -405,6 +411,7 @@ footer p span {
         width: 100%;
         padding: 0px;
     }
+    /*** APRES-ARTICLE ***/
     div.apresArticle {
         display: block;
     }
@@ -415,10 +422,16 @@ footer p span {
         padding: 0px;
         height: auto;
     }
+    div.gauche h2 {
+        font-size: 6vw;
+    }
     div.droite {
         width: 90%;
         margin: auto;
         float: none;
+    }
+    div.droite h2 {
+        font-size: 6vw;
     }
     div.droite form {
         margin: 0px;
