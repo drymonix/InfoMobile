@@ -370,6 +370,9 @@ footer p span {
     header {
         padding: 0px;
     }
+    header div.haut {
+        width: 100%;
+    }
     #burger {
         background-color: gray;
         border: none;
@@ -378,11 +381,11 @@ footer p span {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 50px;
     }
     header div.logotitre {
-        float: none;
         display: inline-block;
+        margin-top: 30px;
     }
     header div.titre p {
         font-size: 25px;
@@ -415,5 +418,9 @@ footer p span {
     div.droite form {
         margin: 0px;
         width: 100%;
+    }
+    div.droite form div.submit {
+        width: 100%;
+        float: none;
     }
 }
