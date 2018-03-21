@@ -1,0 +1,444 @@
+@font-face {
+    font-family: "Futura";
+    src: url('../ttf/Futura Book font.ttf');
+}
+
+
+/*** BACKGROUND ***/
+
+html {
+    background: url(../img/fond.jpg) top left no-repeat fixed;
+    background-size: cover;
+}
+
+
+/*** GENERAL ***/
+
+body {
+    margin: 0px;
+    font-family: "Futura";
+}
+
+
+/*** EN-TETE ***/
+
+header {
+    background-color: grey;
+    padding-left: 10px;
+    height: 70px;
+}
+
+
+/* Logo */
+
+header div.logo {
+    width: 100px;
+    height: 70px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+
+/* Menu */
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header div.haut {
+    width: 70%;
+    margin: auto;
+}
+
+header div.titre {
+    display: inline-block;
+}
+
+header div.logotitre {
+    display: inline-block;
+}
+
+header div.titre p {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    line-height: 70px;
+    float: right;
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
+header div.in {
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+}
+
+header div.in ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+header div.in ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+header div.in ul li:hover {
+    background-color: lightgray;
+}
+
+header div.in ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    line-height: 70px;
+    margin: 0px 5px 0px 5px;
+    text-shadow: black 2px 2px;
+}
+
+header div.in ul li a::before {
+    content: '|';
+    color: white;
+    padding-right: 10px;
+}
+
+header div.in ul li:first-child a::before {
+    content: none;
+}
+
+#burger {
+    display: none;
+}
+
+
+/*** IMAGE MENU ***/
+
+menu {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+}
+
+menu #golfAccueil {
+    width: 100%;
+}
+
+
+/**** PAGE ****/
+
+div.fond {
+    width: 70%;
+    margin: auto;
+    background-color: lightgray;
+}
+
+
+/*** ARTICLE ***/
+
+article div.present {
+    border-bottom: 2px black solid;
+    width: 300px;
+}
+
+article h1 {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+article p {
+    text-align: justify;
+}
+
+
+/*** LES 4 IMAGES DE JOLIES ET BELLES GOLFS ***/
+
+div.lesGolfs {
+    margin: auto;
+    text-align: center;
+}
+
+div.lesGolfs li {
+    display: inline-block;
+    margin: auto;
+    width: 22%;
+    list-style-position: inside;
+    list-style: none;
+    padding: 10px;
+}
+
+div.golf1,
+div.golfgti,
+div.golfrabbit,
+div.golfcab {
+    display: block;
+    width: 100%;
+}
+
+#golf1,
+#golf2,
+#golf3,
+#golf4 {
+    width: 100%;
+}
+
+
+/*** L'APRES ARTICLE ***/
+
+div.apresArticle {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Gauche */
+
+div.gauche {
+    padding-left: 20px;
+    width: 48%;
+    float: left;
+    margin: auto;
+    height: 215px;
+}
+
+div.gauche iframe {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+
+/* Droite */
+
+div.droite {
+    width: 48%;
+    float: right;
+    margin: auto;
+}
+
+div.droite form {
+    display: block;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+div.droite form input {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+div.identite {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+div.nommage,
+div.naiss {
+    display: inline-block;
+    width: 100%;
+}
+
+#prenom,
+#nom,
+#dateNaiss,
+#ville {
+    width: 48%;
+}
+
+#message {
+    box-sizing: border-box;
+    height: 50px;
+}
+
+div.submit {
+    width: 25%;
+    float: right;
+}
+
+
+/*** PIED DE PAGE ***/
+
+footer {
+    background-color: gray;
+    margin: auto;
+    line-height: 50px;
+}
+
+footer div {
+    width: 70%;
+    margin: auto;
+}
+
+footer p {
+    margin: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+footer p span {
+    float: right;
+}
+
+
+/*  Media Queries Approchant de la Tablette */
+
+@media screen and (max-width: 1520px) {
+    /* Règles CSS d’adaptation */
+    div.fond {
+        width: 100%;
+    }
+    header {
+        position: relative;
+    }
+    header div.haut {
+        width: 85%;
+    }
+    footer div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Règles CSS d’adaptation */
+    /*** PAGE ***/
+    div.fond {
+        width: 100%;
+    }
+    /*** EN-TETE***/
+    header {
+        height: 150px;
+    }
+    header div.logotitre {
+        display: block;
+        text-align: center;
+    }
+    header div.in {
+        display: block;
+        float: unset;
+        text-align: center;
+    }
+    /*** LES 4 JOLIES ET BELLES GOLFS ***/
+    div.lesGolfs {
+        width: 100%;
+    }
+    div.lesGolfs li {
+        width: 45%;
+    }
+    /*** L'APRES ARTICLE ***/
+    /* Gauche */
+    div.gauche {
+        height: 270px;
+    }
+    /* Droite */
+    div.identite {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    div.nommage,
+    div.naiss {
+        display: block;
+        width: 100%;
+    }
+    #prenom,
+    #nom,
+    #dateNaiss,
+    #ville {
+        width: 100%;
+    }
+    /*** PIED DE PAGE ***/
+    footer div {
+        width: 90%;
+    }
+}
+
+
+/*  Media Queries Smartphone */
+
+@media screen and (max-width: 700px) {
+    /* Règles CSS d’adaptation */
+    /*** EN-TETE ***/
+    header {
+        padding: 0px;
+        height: 100px;
+    }
+    header div.haut {
+        width: 100%;
+        display: inline-block;
+    }
+    header div.buburger {
+        float: left;
+        width: 15vw;
+    }
+    #burger {
+        background-color: gray;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 8vw;
+    }
+    header div.logotitre {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    header div.logo {
+        width: 15vw;
+    }
+    header div.titre p {
+        font-size: 5vw;
+    }
+    header div.in ul {
+        display: none;
+    }
+    /*** LES 4 GOLFS ***/
+    div.lesGolfs {
+        width: 100%;
+    }
+    div.lesGolfs li {
+        width: 100%;
+        padding: 0px;
+    }
+    /*** APRES-ARTICLE ***/
+    div.apresArticle {
+        display: block;
+    }
+    div.gauche {
+        width: 90%;
+        margin: auto;
+        float: none;
+        padding: 0px;
+        height: auto;
+    }
+    div.gauche h2 {
+        font-size: 6vw;
+    }
+    div.droite {
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+    div.droite h2 {
+        font-size: 6vw;
+    }
+    div.droite form {
+        margin: 0px;
+        width: 100%;
+    }
+    div.droite form div.submit {
+        width: 100%;
+        float: none;
+    }
+}
