@@ -19,11 +19,13 @@
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="mdpi" height="57" platform="android" src="res/icon/android/logo.png" width="57" />
+        <splash src="res/screen/android/splash-landscape.jpg" />
+        <splash src="res/screen/android/splash-portrait.jpg" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
+    <engine name="android" spec="^7.0.0" />
 </widget>
