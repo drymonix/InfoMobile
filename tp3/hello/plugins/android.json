@@ -27,6 +27,9 @@
     },
     "cordova-plugin-console": {
       "PACKAGE_NAME": "com.example.tp3"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.example.tp3"
     }
   },
   "dependent_plugins": {}

@@ -6,7 +6,7 @@
     <title>Golf One Passion - FR</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="img" href="img/icon.png" />
-	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
     <header>
         <div class="haut">
             <div class="buburger">
-                <button id="burger">&#9776;</button>
+                <button id="burger" onclick="menuBurger()">&#9776;</button>
             </div>
             <div class="logotitre">
                 <div class="logo">
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="in">
-                <ul>
+                <ul id="buttonBlock">
                     <li><a href="www.mon-site.com">Accueil</a>
                     </li>
                     <li><a href="www.mon-site.com">Histoire</a>

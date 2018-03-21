@@ -34,6 +34,7 @@
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
     <plugin name="cordova-plugin-battery-status" spec="^2.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
-    <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-plugin-console" spec="^1.1.0" />
+    <plugin name="cordova-plugin-contacts" spec="^3.0.1" />
+    <engine name="android" spec="^7.0.0" />
 </widget>
