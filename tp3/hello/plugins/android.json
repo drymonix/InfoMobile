@@ -12,6 +12,21 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.example.tp3"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.example.tp3"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.example.tp3"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.example.tp3"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.example.tp3"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.example.tp3"
     }
   },
   "dependent_plugins": {}
