@@ -1,8 +1,18 @@
 document.addEventListener("deviceready", checkConnection, false);
 document.addEventListener("deviceready", onDeviceReady, false);
-window.addEventListener("batterystatus", onBatteryStatus, false);
-/*window.addEventListener("batterylow", onBatteryLow, false);
-window.addEventListener("batterycritical", onBatteryCritical, false);*/
+
+
+function menuBurger() {
+    if ($("#buttonBlock").css("display") == "block") {
+        $("#burger").html("&#9776;");
+        $("#buttonBlock").css("display", "none");
+        $("header").css("height", "100px");
+    } else {
+        $("#burger").html("X");
+        $("#buttonBlock").css("display", "block");
+        $("header").css("height", "200px");
+    }
+}
 
 function checkConnection() {
     var networkState = navigator.connection.type;
@@ -26,18 +36,19 @@ function checkConnection() {
 }
 
 function onDeviceReady() {
+    window.addEventListener("batterystatus", onBatteryStatus, false);
+    document.getElementById("createContact").addEventListener("click", createContact);
     var model = device.model;
     var OS = device.platform;
     var language = navigator.language;
     var version = device.version;
     var UUID = device.uuid;
-    alert("Modele = " + model);
-    alert("OS = " + OS);
-    alert("langue = " + language);
-    alert("version = " + version);
-    alert("UUID = " + UUID);
-    var myContact = navigator.contacts.create({ "displayName": "Test User" });
-    alert("Contact = " + myContact);
+    alert("Modele = " + model + "\n" +
+        "OS = " + OS + "\n" +
+        "langue = " + language + "\n" +
+        "version = " + version + "\n" +
+        "UUID = " + UUID
+    );
 }
 
 function onBatteryStatus(status) {
@@ -47,14 +58,16 @@ function onBatteryStatus(status) {
     alert("Niveau de batterie : " + status.level + " est branché : " + status.isPlugged);
 }
 
-function menuBurger() {
-    if ($("#buttonBlock").css("display") == "block") {
-        $("#burger").html("&#9776;");
-        $("#buttonBlock").css("display", "none");
-        $("header").css("height", "100px");
-    } else {
-        $("#burger").html("X");
-        $("#buttonBlock").css("display", "block");
-        $("header").css("height", "200px");
+function createContact() {
+    var myContact = navigator.contacts.create({ "displayName": "Test User" });
+    myContact.save(contactSuccess, contactError);
+
+    function contactSuccess() {
+        alert("Contact is saved!");
     }
+
+    function contactError(message) {
+        alert('Failed because: ' + message);
+    }
+
 }

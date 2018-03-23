@@ -4,6 +4,9 @@
 }
 
 
+/*********************** PAGE d'ACCUEIL **************************/
+
+
 /*** BACKGROUND ***/
 
 html {
@@ -287,6 +290,35 @@ footer p {
 
 footer p span {
     float: right;
+}
+
+
+/*********************** CONTACTS **************************/
+
+div.contacts {
+    display: inline-block;
+    width: 100%;
+}
+
+div.mesContacts {
+    float: left;
+}
+
+div.ajoutContact {
+    float: right;
+    height: auto;
+}
+
+#createContact {
+    background-color: lightgray;
+    border: none;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 52px;
 }
 
 
