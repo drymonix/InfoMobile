@@ -1,7 +1,6 @@
 document.addEventListener("deviceready", checkConnection, false);
 document.addEventListener("deviceready", onDeviceReady, false);
 
-
 function menuBurger() {
     if ($("#buttonBlock").css("display") == "block") {
         $("#burger").html("&#9776;");
@@ -38,6 +37,7 @@ function checkConnection() {
 function onDeviceReady() {
     window.addEventListener("batterystatus", onBatteryStatus, false);
     document.getElementById("createContact").addEventListener("click", createContact);
+
     var model = device.model;
     var OS = device.platform;
     var language = navigator.language;
@@ -59,15 +59,20 @@ function onBatteryStatus(status) {
 }
 
 function createContact() {
-    var myContact = navigator.contacts.create({ "displayName": "Test User" });
+    var myContact = navigator.contacts.create({ "displayName": "Verlande Ryan", "phoneNumbers": "0671057319" });
     myContact.save(contactSuccess, contactError);
 
     function contactSuccess() {
-        alert("Contact is saved!");
+        alert("Contact sauvegarde !");
     }
 
     function contactError(message) {
-        alert('Failed because: ' + message);
+        alert('Erreur : ' + message);
     }
+
+
+    var monMessage = "<table><tbody><tr><td id=\"nom\">" + myContact.displayName + "</td><td>" + myContact.phoneNumbers + "</td>";
+    var contact = monMessage + "<hr></td></tr></tbody></table>";
+    $(listContact).prepend(contact);
 
 }
